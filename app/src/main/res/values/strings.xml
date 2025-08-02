@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="logout">Logout</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="update_task">Update Task</string>
+    <string name="save_task">Save Task</string>
+    <string name="enter_task_title">Enter task title</string>
+    <string name="login_to_to_do_app">Login</string>
+    <string name="email">Username/Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register">Don’t have an account? Register</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="register">Register</string>
+    <string name="register_account">Register Account</string>
+    <string name="no_result_for_your_task_title">No result for your task title</string>
+</resources>

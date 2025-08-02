@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_nav_graph.xml"
+    app:startDestination="@id/taskListFragment">
+
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.giftcard8.todoapp.ui.task.fragment.TaskListFragment"
+        android:label="To-Do App"
+        tools:layout="@layout/fragment_task_list" >
+        <action
+            android:id="@+id/action_taskListFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+        <action
+            android:id="@+id/action_taskListFragment_to_editTaskFragment"
+            app:destination="@id/editTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.giftcard8.todoapp.ui.task.fragment.AddTaskFragment"
+        android:label="To-Do App"
+        tools:layout="@layout/fragment_add_task" />
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="com.giftcard8.todoapp.ui.task.fragment.EditTaskFragment"
+        android:label="To-Do App"
+        tools:layout="@layout/fragment_edit_task" >
+        <argument
+            android:name="TASK"
+            app:argType="com.giftcard8.todoapp.db.task.TaskEntity" />
+    </fragment>
+</navigation>

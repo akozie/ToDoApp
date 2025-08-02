@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/editTaskLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="24dp"
+tools:context=".ui.task.fragment.EditTaskFragment">
+
+<!-- Title -->
+<TextView
+    android:id="@+id/textViewEditTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Edit Task"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+<!-- Input field -->
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/textInputLayoutEdit"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    app:boxBackgroundMode="outline"
+    app:boxCornerRadiusTopStart="12dp"
+    app:boxCornerRadiusTopEnd="12dp"
+    app:boxCornerRadiusBottomStart="12dp"
+    app:boxCornerRadiusBottomEnd="12dp"
+    app:boxStrokeColor="@color/purple_500"
+    app:layout_constraintTop_toBottomOf="@id/textViewEditTitle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextTaskEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task title"
+        android:inputType="textCapSentences" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<!-- Update button -->
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/buttonUpdateTask"
+    android:layout_width="0dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="32dp"
+    android:text="@string/update_task"
+    android:textAllCaps="false"
+    app:cornerRadius="16dp"
+    style="@style/Widget.MaterialComponents.Button"
+    app:layout_constraintTop_toBottomOf="@id/textInputLayoutEdit"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

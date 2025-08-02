@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color -->
+    <item android:drawable="@color/white" />
+
+    <!-- Center logo -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/to_do" />
+    </item>
+</layer-list>
